@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Web3 from 'web3';
 import AddNewMessage from './addNewMessage';
+import MintNFT from './mintPage';
 import Register from './registerWallet';
 import ViewMessages from './viewMessages';
 
@@ -21,6 +22,7 @@ const Home = (props) => {
     return (
         <div>
             <p>Your account is: {account}</p>
+            <MintNFT/>
             <Register/>
             <AddNewMessage/>
             <ViewMessages/>
